@@ -49,7 +49,6 @@ export class BoardPage {
   joinedGameId:any;
   myColor!: number;
   private highlightedSquare: any;
-  private kingHighlightedSquare: any;
   battleTimer = 10;
 
   ngOnInit() {
@@ -205,7 +204,7 @@ export class BoardPage {
       moveColor = 'b';
     }
 
-    let move = {from: fromSquare.position.pos,to: fromSquare.position.pos,color:moveColor};
+    let move = {from: fromSquare.position.pos,to: toSquare.position.pos,color:moveColor};
 
     this.completeMovement(move);
   }

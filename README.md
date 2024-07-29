@@ -1,6 +1,6 @@
-# LMS
+# Simple Chess Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
+This is a Simple chess project with ❤️ by Anil using Angular CLI version 16.0.1.
 
 ## Install Dependency
 
