@@ -1,0 +1,30 @@
+.button{
+    justify-items: center;
+    display: grid; 
+}
+.logo{
+    padding: 0px 0px 15px 0px;
+    justify-items: center;
+    display: grid;
+
+    img{
+        max-width:273px;
+    }
+}
+
+.trapezoid {
+    height: 0;
+    width: 165px;
+    border-bottom: 50px solid #87b03e;
+    border-left: 23px solid transparent;
+    border-right: 25px solid transparent;
+    border-radius: 10px 10px 10px 10px;
+	--background: transparent;
+    --box-shadow: none;
+    --padding-top: 23px;
+    --padding-bottom: 15px;
+    --color: white;
+    font-size: 26px;
+    font-weight: 700;
+}
+

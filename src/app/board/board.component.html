@@ -1,0 +1,24 @@
+
+<div class="board-content" id="container">
+        <table class="chess_table"
+              [style.width.px]="boardSize"
+              [style.height.px]="boardSize"
+              (window:resize)="resize()">
+          <tr *ngFor="let row of game.board.rows; let y = index;">
+            <td [style.font-size.em]="2"
+              *ngFor="let square of row.squares; let x = index;"
+              [style.width.px]="squareSize"
+              [style.height.px]="squareSize"
+              (click)="click(x,y)"
+              [style.background]="square.highlightColor"
+              [ngClass]="square.piece && square.piece.color == 0 ? 'WP' : 'BP'"
+              >
+              <div style="position: relative;">
+                <span class="square" [style.border]="square.border"></span>
+                <img class="piece-img" *ngIf="square.piece != null" [style.width.px]="squareSize" [style.height.px]="squareSize" src="/assets/img/chesspieces/wikipedia/{{square.piece.type}}.png" />
+              </div>  
+
+            </td>
+          </tr>
+        </table>
+</div>
