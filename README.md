@@ -1,6 +1,6 @@
 # Simple Chess Project
 
-This is a Simple chess project with ❤️ by Anil using Angular CLI version 16.0.1.
+This is a Simple chess project, developed with ❤️ by Anil using Angular CLI version 16.0.1.
 
 ## Install Dependency
 
